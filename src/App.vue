@@ -2,12 +2,21 @@
   <div id="app">
     <!-- <img src="./assets/logo.png"> -->
     <router-view/>
+    <menu></menu>
+    <foot></foot>
   </div>
 </template>
 
 <script>
+import Menu from './components/menu'
+import Foot from './components/foot'
+
 export default {
-  name: 'app'
+  name: 'app',
+  components: { // 注册组件才能使用
+    Menu,
+    Foot
+  }
 }
 </script>
 
