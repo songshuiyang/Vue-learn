@@ -1,9 +1,10 @@
 <template>
   <div id="app">
     <!-- <img src="./assets/logo.png"> -->
-    <router-view/>
+    <!-- <router-view/> -->
     <menu></menu>
-    <foot></foot>
+     分割线
+    <foot msgFromFather='父组件'></foot>
   </div>
 </template>
 

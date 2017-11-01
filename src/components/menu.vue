@@ -1,9 +1,8 @@
 <template>
-   <h2>菜单</h2>
+   <h2>底部1</h2>
 </template>
 <script>
 export default {
   name:'menu'
 }
 </script>
-
