@@ -22,6 +22,11 @@ export default {
     listenToMyBoy:function(msg){
       alert(msg)
     }
+  },
+  events:{
+    'child-tell-me-something-dispatch' : function(msg){
+      alert(msg)
+    }
   }
 }
 </script>
