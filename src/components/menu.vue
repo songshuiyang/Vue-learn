@@ -1,5 +1,7 @@
 <template>
-   <h2>底部1</h2>
+  <div>
+    底部1
+  </div>
 </template>
 <script>
 export default {

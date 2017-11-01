@@ -4,7 +4,7 @@
     <!-- <router-view/> -->
     <menu></menu>
      分割线
-    <foot msgFromFather='父组件'></foot>
+    <foot msgFromFather='来自父组件的消息' v-on:child-tell-me-something='listenToMyBoy'></foot>
   </div>
 </template>
 
@@ -17,6 +17,11 @@ export default {
   components: { // 注册组件才能使用,SelectItem Vue会把这个转化成 <select-item></select-item>
     Menu, 
     Foot
+  },
+  methods:{
+    listenToMyBoy:function(msg){
+      alert(msg)
+    }
   }
 }
 </script>
