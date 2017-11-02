@@ -5,6 +5,7 @@
     <menu></menu>
      分割线
     <foot msgFromFather='来自父组件的消息' v-on:child-tell-me-something='listenToMyBoy'></foot>
+    <div> {{ money | formartMoney}}</div>
   </div>
 </template>
 
@@ -14,6 +15,15 @@ import Foot from './components/foot'
 
 export default {
   name: 'app',
+  created(){
+
+  },
+  data () {
+    return{
+        money: 100
+      }
+     
+  },
   components: { // 注册组件才能使用,SelectItem Vue会把这个转化成 <select-item></select-item>
     Menu, 
     Foot
@@ -21,6 +31,11 @@ export default {
   methods:{
     listenToMyBoy:function(msg){
       alert(msg)
+    }
+  },
+  filters:{
+    formartMoney:function (value){
+      return "￥ " + value
     }
   },
   events:{
