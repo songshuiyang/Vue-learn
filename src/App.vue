@@ -22,7 +22,6 @@ export default {
     return{
         money: 100
       }
-     
   },
   components: { // 注册组件才能使用,SelectItem Vue会把这个转化成 <select-item></select-item>
     Menu, 
