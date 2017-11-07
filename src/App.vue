@@ -15,7 +15,7 @@
     </span>
     <div>
       <ol>
-        <li v-for="todo in tools">
+        <li v-for="todo in tools" :key="todo.text">
             {{todo.text}}
         </li>
       </ol>
