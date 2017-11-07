@@ -30,6 +30,7 @@
 
    
     <a v-on:click.once="listenToMyBoy">点击事件将只会触发一次</a>
+    <input type="text" v-on:keyup.enter="listenToMyBoy" value=""/>
   </div>
 </template>
 
