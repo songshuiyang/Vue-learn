@@ -22,6 +22,7 @@
     </div>
     <!-- v-bind 缩写：
          v-on 缩写 @  -->
+    <div v-bind:class="classObject">classObject</div>
   </div>
 </template>
 
@@ -42,7 +43,11 @@ export default {
           {text: 'Java'},
           {text: 'C++'},
           {text: 'C#'}
-        ]
+        ],
+        classObject:{
+          active: true,
+          'text-danger': false
+        }
       }
   },
   components: { // 注册组件才能使用,SelectItem Vue会把这个转化成 <select-item></select-item>
