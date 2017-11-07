@@ -10,6 +10,13 @@
     <span v-bind:title="message">
         鼠标悬停几秒钟查看此处动态绑定的提示信息！
     </span>
+    <div>
+      <ol >
+        <li v-for="todo in todos">
+            {{todo.text}}
+        </li>
+      </ol>
+    </div>
   </div>
 </template>
 
@@ -25,7 +32,12 @@ export default {
   data () {
     return{
         money: 100 ,
-        message: 'helloWorld'
+        message: 'helloWorld',
+        tools: [
+          {text: 'Java'},
+          {text: 'C++'},
+          {text: 'C#'},
+        ]
       }
   },
   components: { // 注册组件才能使用,SelectItem Vue会把这个转化成 <select-item></select-item>
