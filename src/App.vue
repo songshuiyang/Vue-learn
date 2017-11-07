@@ -7,6 +7,9 @@
     <foot msgFromFather='来自父组件的消息' v-on:child-tell-me-something='listenToMyBoy'></foot>
     <div> {{ money | formartMoney}}</div> 
     <!-- 模板语法来声明式的将数据渲染进 DOM 的系统 -->
+    <span v-bind:title="message">
+        鼠标悬停几秒钟查看此处动态绑定的提示信息！
+    </span>
   </div>
 </template>
 
@@ -21,7 +24,8 @@ export default {
   },
   data () {
     return{
-        money: 100
+        money: 100 ,
+        message: 'helloWorld'
       }
   },
   components: { // 注册组件才能使用,SelectItem Vue会把这个转化成 <select-item></select-item>
