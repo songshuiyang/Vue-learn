@@ -23,6 +23,9 @@
     <!-- v-bind 缩写：
          v-on 缩写 @  -->
     <div v-bind:class="classObject">classObject</div>
+ 
+    <input type="button" v-on:click="toggle()" value="v-show"/>
+    <div v-show="isShow" style="width: 100px;height: 100px;background: red"></div>
   </div>
 </template>
 
@@ -47,7 +50,8 @@ export default {
         classObject:{
           active: true,
           'text-danger': false
-        }
+        },
+        isShow:false
       }
   },
   components: { // 注册组件才能使用,SelectItem Vue会把这个转化成 <select-item></select-item>
@@ -57,6 +61,9 @@ export default {
   methods:{
     listenToMyBoy:function(msg){
       alert(msg)
+    },
+    toggle:function(){
+      this.isShow = !this.isShow
     }
   },
   computed:{
