@@ -26,6 +26,10 @@
  
     <input type="button" v-on:click="toggle()" value="v-show"/>
     <div v-show="isShow" style="width: 100px;height: 100px;background: red"></div>
+
+
+   
+    <a v-on:click.once="listenToMyBoy">点击事件将只会触发一次</a>
   </div>
 </template>
 
