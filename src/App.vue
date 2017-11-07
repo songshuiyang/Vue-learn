@@ -10,6 +10,9 @@
     <span v-bind:title="message">
         鼠标悬停几秒钟查看此处动态绑定的提示信息！
     </span>
+    <span>
+      {{reversedMessage}}
+    </span>
     <div>
       <ol>
         <li v-for="todo in tools">
@@ -49,6 +52,13 @@ export default {
   methods:{
     listenToMyBoy:function(msg){
       alert(msg)
+    }
+  },
+  computed:{
+  // 计算属性的 getter
+    reversedMessage: function () {
+      // `this` 指向 vm 实例
+      return this.message.split('').reverse().join('')
     }
   },
   filters:{
