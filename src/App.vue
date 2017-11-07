@@ -17,6 +17,8 @@
         </li>
       </ol>
     </div>
+    <!-- v-bind 缩写：
+         v-on 缩写 @  -->
   </div>
 </template>
 
