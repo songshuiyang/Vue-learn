@@ -5,7 +5,8 @@
     <menu></menu>
      分割线
     <foot msgFromFather='来自父组件的消息' v-on:child-tell-me-something='listenToMyBoy'></foot>
-    <div> {{ money | formartMoney}}</div>
+    <div> {{ money | formartMoney}}</div> 
+    <!-- 模板语法来声明式的将数据渲染进 DOM 的系统 -->
   </div>
 </template>
 
