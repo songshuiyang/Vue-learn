@@ -11,8 +11,8 @@
         鼠标悬停几秒钟查看此处动态绑定的提示信息！
     </span>
     <div>
-      <ol >
-        <li v-for="todo in todos">
+      <ol>
+        <li v-for="todo in tools">
             {{todo.text}}
         </li>
       </ol>
@@ -36,7 +36,7 @@ export default {
         tools: [
           {text: 'Java'},
           {text: 'C++'},
-          {text: 'C#'},
+          {text: 'C#'}
         ]
       }
   },
