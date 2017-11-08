@@ -1,10 +1,15 @@
 <template>
   <div>
-    底部1
+    菜单
   </div>
 </template>
 <script>
 export default {
-  name:'menu'
+  name:'menu1',
+  data: function (){
+    return {
+        item:''
+    }
+  },
 }
 </script>

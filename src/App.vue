@@ -42,13 +42,16 @@
   <span>Selected: {{ selected }}</span>
 
 
-  
+  <comp v-bind:someprop="1"></comp>
+
+
   </div>
 </template>
 
 <script>
 import Menu from './components/menu'
 import Foot from './components/foot'
+import Comp from './components/comp'
 
 export default {
   name: 'app',
@@ -74,7 +77,8 @@ export default {
   },
   components: { // 注册组件才能使用,SelectItem Vue会把这个转化成 <select-item></select-item>
     Menu, 
-    Foot
+    Foot,
+    Comp
   },
   methods:{
     listenToMyBoy:function(msg){
