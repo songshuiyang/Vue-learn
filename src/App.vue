@@ -2,7 +2,7 @@
   <div id="app">
     <!-- <img src="./assets/logo.png"> -->
     <!-- <router-view/> -->
-    <menu></menu>
+    <menu1></menu1>
      分割线
     <foot msgFromFather='来自父组件的消息' v-on:child-tell-me-something='listenToMyBoy'></foot>
     <div> {{ money | formartMoney}}</div> 
@@ -49,7 +49,7 @@
 </template>
 
 <script>
-import Menu from './components/menu'
+import Menu1 from './components/menu1'
 import Foot from './components/foot'
 import Comp from './components/comp'
 
@@ -76,7 +76,7 @@ export default {
       }
   },
   components: { // 注册组件才能使用,SelectItem Vue会把这个转化成 <select-item></select-item>
-    Menu, 
+    Menu1, 
     Foot,
     Comp
   },
