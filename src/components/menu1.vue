@@ -1,6 +1,7 @@
 <template>
   <div>
     菜单
+    <slot></slot>
   </div>
 </template>
 <script>

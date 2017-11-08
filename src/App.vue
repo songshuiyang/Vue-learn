@@ -4,7 +4,9 @@
     <!-- <router-view/> -->
     <!-- 如果出现Do not use built-in or reserved HTML elements as component id警告处理方式
 这样的报错原因是因为在App.vue父组件里有<component></component>标签，有重名了。所以要把原来的标签名换掉，例:<componentHello>。这里尽量不要设置为component。 -->
-    <menu1></menu1>
+    <menu1>
+      <div>ffff</div>
+    </menu1>
      分割线
     <foot msgFromFather='来自父组件的消息' v-on:child-tell-me-something='listenToMyBoy'></foot>
     <div> {{ money | formartMoney}}</div> 
