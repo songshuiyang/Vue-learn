@@ -31,6 +31,18 @@
    
     <a v-on:click.once="listenToMyBoy">点击事件将只会触发一次</a>
     <input type="text" v-on:keyup.enter="listenToMyBoy" value=""/>
+
+
+    <select v-model="selected">
+      <option disabled value="">请选择</option>
+      <option>A</option>
+      <option>B</option>
+      <option>C</option>
+    </select>
+  <span>Selected: {{ selected }}</span>
+
+
+  
   </div>
 </template>
 
@@ -56,7 +68,8 @@ export default {
           active: true,
           'text-danger': false
         },
-        isShow:false
+        isShow:false,
+        selected:''
       }
   },
   components: { // 注册组件才能使用,SelectItem Vue会把这个转化成 <select-item></select-item>
