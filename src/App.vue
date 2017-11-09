@@ -47,8 +47,6 @@
 
 
   <comp v-bind:someprop="1"></comp>
-
-
   </div>
 </template>
 
