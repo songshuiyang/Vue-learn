@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    
+  
     <!-- <img src="./assets/logo.png"> -->
     <!-- <router-view/> -->
     <!-- 如果出现Do not use built-in or reserved HTML elements as component id警告处理方式
